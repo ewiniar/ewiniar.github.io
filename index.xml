@@ -22,35 +22,6 @@
     </item>
     
     <item>
-      <title>Cybersecurity Architect</title>
-      <link>https://ewiniar.github.io/post/cybersecurity.architects/</link>
-      <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
-      
-      <guid>https://ewiniar.github.io/post/cybersecurity.architects/</guid>
-      <description>Security Architecture History and Overview Architecture History  One of the very first architecture frameworks was Zachmann Framework, which came out in 1987.</description>
-    </item>
-    
-    <item>
-      <title>Cybersecurity Attack Defense Strategies</title>
-      <link>https://ewiniar.github.io/post/cybersecurity.attack.defense.strategy/</link>
-      <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
-      
-      <guid>https://ewiniar.github.io/post/cybersecurity.attack.defense.strategy/</guid>
-      <description>Security Posture  Current threat landscape Enhancing security posture Cloud Security Posture Management Red and Blue team Assume breach</description>
-    </item>
-    
-    <item>
-      <title>Hunting Cyber Criminal</title>
-      <link>https://ewiniar.github.io/post/hunting.cyber.criminal/</link>
-      <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
-      
-      <guid>https://ewiniar.github.io/post/hunting.cyber.criminal/</guid>
-      <description>Getting Started   Maltego
-  OSINT OSINT
-  OSINT.</description>
-    </item>
-    
-    <item>
       <title>Solution Architect</title>
       <link>https://ewiniar.github.io/post/solution.architect/</link>
       <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
@@ -60,12 +31,41 @@
     </item>
     
     <item>
+      <title>Hunting Cyber Criminal</title>
+      <link>https://ewiniar.github.io/post/hunting.cyber.criminal/</link>
+      <pubDate>Sun, 10 May 2020 18:11:24 +0800</pubDate>
+      
+      <guid>https://ewiniar.github.io/post/hunting.cyber.criminal/</guid>
+      <description>Getting Started   Maltego
+  OSINT OSINT
+  OSINT.</description>
+    </item>
+    
+    <item>
+      <title>Cybersecurity Architect</title>
+      <link>https://ewiniar.github.io/post/cybersecurity.architects/</link>
+      <pubDate>Wed, 19 Feb 2020 15:51:14 +0800</pubDate>
+      
+      <guid>https://ewiniar.github.io/post/cybersecurity.architects/</guid>
+      <description>Security Architecture History and Overview Architecture History  One of the very first architecture frameworks was Zachmann Framework, which came out in 1987.</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://ewiniar.github.io/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ewiniar.github.io/archives/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Cybersecurity Attack Defense Strategies</title>
+      <link>https://ewiniar.github.io/post/cybersecurity.attack.defense.strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewiniar.github.io/post/cybersecurity.attack.defense.strategy/</guid>
+      <description>Security Posture  Current threat landscape Enhancing security posture Cloud Security Posture Management Red and Blue team Assume breach</description>
     </item>
     
   </channel>
