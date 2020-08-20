@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Website of Jierfei</title>
+    <link>https://ewiniar.github.io/about/</link>
+    <description>Recent content in Abouts on Website of Jierfei</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 19 Aug 2020 17:06:27 +0800</lastBuildDate>
+    
+	<atom:link href="https://ewiniar.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://ewiniar.github.io/about/about/</link>
+      <pubDate>Wed, 19 Aug 2020 17:06:27 +0800</pubDate>
+      
+      <guid>https://ewiniar.github.io/about/about/</guid>
+      <description>Constant dropping wears the stone.  @Jierfei  </description>
+    </item>
+    
+  </channel>
+</rss>

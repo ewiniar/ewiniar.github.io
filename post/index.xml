@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Website of Jierfei</title>
+    <link>https://ewiniar.github.io/post/</link>
+    <description>Recent content in Posts on Website of Jierfei</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 19 Aug 2020 15:51:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://ewiniar.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cybersecurity Architect</title>
+      <link>https://ewiniar.github.io/post/cybersecurity.architects/</link>
+      <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
+      
+      <guid>https://ewiniar.github.io/post/cybersecurity.architects/</guid>
+      <description>Security Architecture History and Overview Architecture History  One of the very first architecture frameworks was Zachmann Framework, which came out in 1987.</description>
+    </item>
+    
+    <item>
+      <title>Cybersecurity Attack Defense Strategies</title>
+      <link>https://ewiniar.github.io/post/cybersecurity.attack.defense.strategy/</link>
+      <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
+      
+      <guid>https://ewiniar.github.io/post/cybersecurity.attack.defense.strategy/</guid>
+      <description>Security Posture  Current threat landscape Enhancing security posture Cloud Security Posture Management Red and Blue team Assume breach</description>
+    </item>
+    
+    <item>
+      <title>Hunting Cyber Criminal</title>
+      <link>https://ewiniar.github.io/post/hunting.cyber.criminal/</link>
+      <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
+      
+      <guid>https://ewiniar.github.io/post/hunting.cyber.criminal/</guid>
+      <description>Getting Started   Maltego
+  OSINT OSINT
+  OSINT.</description>
+    </item>
+    
+    <item>
+      <title>Solution Architect</title>
+      <link>https://ewiniar.github.io/post/solution.architect/</link>
+      <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
+      
+      <guid>https://ewiniar.github.io/post/solution.architect/</guid>
+      <description>The Meaning of Solution Architecture The solution architecture in an organization Priciples of solution architecture design  Scaling workload Building resilient architecture Design for performance Using replaceable resources Think loose coupling Think service not server Using the right storage for the right need·Think data-driven design Overcoming constraints  Mo(Must have) S(Should have) C(Could have) W(Wont have) MosCow Plan a minimum value product(MVP) for your customer.</description>
+    </item>
+    
+  </channel>
+</rss>
