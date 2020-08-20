@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cyber on Website of Ewiniar</title>
-    <link>https://ewiniar.github.io/tags/cyber/</link>
-    <description>Recent content in Cyber on Website of Ewiniar</description>
+    <title>Management on Website of Ewiniar</title>
+    <link>https://ewiniar.github.io/tags/management/</link>
+    <description>Recent content in Management on Website of Ewiniar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 19 Aug 2020 15:51:14 +0800</lastBuildDate>
     
-	<atom:link href="https://ewiniar.github.io/tags/cyber/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ewiniar.github.io/tags/management/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -38,6 +38,15 @@
       <description>Getting Started   Maltego
   OSINT OSINT
   OSINT.</description>
+    </item>
+    
+    <item>
+      <title>Solution Architect</title>
+      <link>https://ewiniar.github.io/post/solution.architect/</link>
+      <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
+      
+      <guid>https://ewiniar.github.io/post/solution.architect/</guid>
+      <description>The Meaning of Solution Architecture The solution architecture in an organization Priciples of solution architecture design  Scaling workload Building resilient architecture Design for performance Using replaceable resources Think loose coupling Think service not server Using the right storage for the right need·Think data-driven design Overcoming constraints  Mo(Must have) S(Should have) C(Could have) W(Wont have) MosCow Plan a minimum value product(MVP) for your customer.</description>
     </item>
     
   </channel>

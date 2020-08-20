@@ -3,18 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ewiniar.github.io/</loc>
-    <lastmod>2020-08-19T17:06:27+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ewiniar.github.io/about/about/</loc>
-    <lastmod>2020-08-19T17:06:27+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ewiniar.github.io/about/</loc>
     <lastmod>2020-08-19T17:06:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ewiniar.github.io/</loc>
+    <lastmod>2020-08-19T15:51:14+08:00</lastmod>
   </url>
   
   <url>
@@ -43,12 +38,32 @@
   </url>
   
   <url>
+    <loc>https://ewiniar.github.io/tags/management/</loc>
+    <lastmod>2020-08-19T15:51:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ewiniar.github.io/tags/network/</loc>
+    <lastmod>2020-08-19T15:51:14+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ewiniar.github.io/post/</loc>
     <lastmod>2020-08-19T15:51:14+08:00</lastmod>
   </url>
   
   <url>
+    <loc>https://ewiniar.github.io/tags/security/</loc>
+    <lastmod>2020-08-19T15:51:14+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ewiniar.github.io/categories/security/</loc>
+    <lastmod>2020-08-19T15:51:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ewiniar.github.io/tags/solution-architect/</loc>
     <lastmod>2020-08-19T15:51:14+08:00</lastmod>
   </url>
   
