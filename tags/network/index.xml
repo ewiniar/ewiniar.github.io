@@ -13,7 +13,9 @@
       <pubDate>Thu, 12 May 2022 14:57:42 +0800</pubDate>
       
       <guid>https://ewiniar.github.io/post/incident.response.for.ransomware.attacks/</guid>
-      <description>Volatile memory collection and analysis   AccessData FTK Imager</description>
+      
+        <description>Volatile memory collection and analysis   AccessData FTK Imager</description>
+      
     </item>
     
     <item>
@@ -22,9 +24,11 @@
       <pubDate>Sun, 10 May 2020 18:11:24 +0800</pubDate>
       
       <guid>https://ewiniar.github.io/post/hunting.cyber.criminal/</guid>
-      <description>Getting Started   Maltego
+      
+        <description>Getting Started   Maltego
   OSINT OSINT
   OSINT.</description>
+      
     </item>
     
     <item>
@@ -33,7 +37,9 @@
       <pubDate>Wed, 08 Apr 2020 11:51:16 +0800</pubDate>
       
       <guid>https://ewiniar.github.io/post/cybersecurity.attack.defense.strategy/</guid>
-      <description>Security Posture  Current threat landscape Enhancing security posture Cloud Security Posture Management Red and Blue team Assume breach</description>
+      
+        <description>Security Posture  Current threat landscape Enhancing security posture Cloud Security Posture Management Red and Blue team Assume breach</description>
+      
     </item>
     
     <item>
@@ -42,7 +48,9 @@
       <pubDate>Wed, 19 Feb 2020 15:51:14 +0800</pubDate>
       
       <guid>https://ewiniar.github.io/post/cybersecurity.architects/</guid>
-      <description>Security Architecture History and Overview Architecture History  One of the very first architecture frameworks was Zachmann Framework, which came out in 1987.</description>
+      
+        <description>Security Architecture History and Overview Architecture History  One of the very first architecture frameworks was Zachmann Framework, which came out in 1987.</description>
+      
     </item>
     
   </channel>

@@ -13,7 +13,9 @@
       <pubDate>Wed, 19 Aug 2020 15:51:14 +0800</pubDate>
       
       <guid>https://ewiniar.github.io/post/solution.architect/</guid>
-      <description>The Meaning of Solution Architecture The solution architecture in an organization Priciples of solution architecture design  Scaling workload Building resilient architecture Design for performance Using replaceable resources Think loose coupling Think service not server Using the right storage for the right need·Think data-driven design Overcoming constraints  Mo(Must have) S(Should have) C(Could have) W(Wont have) MosCow Plan a minimum value product(MVP) for your customer.</description>
+      
+        <description>The Meaning of Solution Architecture The solution architecture in an organization Priciples of solution architecture design  Scaling workload Building resilient architecture Design for performance Using replaceable resources Think loose coupling Think service not server Using the right storage for the right need·Think data-driven design Overcoming constraints  Mo(Must have) S(Should have) C(Could have) W(Wont have) MosCow Plan a minimum value product(MVP) for your customer.</description>
+      
     </item>
     
   </channel>
